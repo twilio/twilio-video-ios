@@ -10,12 +10,9 @@ Please note that additional steps are required for successful integration of thi
 
 We support integration using Carthage binary frameworks. You can add Programmable Video for iOS by adding the following line to your Cartfile:
 ```
-github "twilio/twilio-chat-ios"
+github "twilio/twilio-video-ios"
 ```
 
 Then run `carthage bootstrap` (or `carthage update` if you are updating your SDKs)
 
-The .framework file(s) will be downloaded to the Carthage/Build/iOS directory. The final step is to complete integration mentioned in the [manual](https://www.twilio.com/docs/api/video/ios#add-the-sdk) section.
-
-
-
+The .framework file(s) will be downloaded to the Carthage/Build/iOS directory. The final step is to complete integration mentioned in the manual section in [add the SDK](https://www.twilio.com/docs/api/video/ios#add-the-sdk).
