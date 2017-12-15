@@ -1,18 +1,42 @@
 # Twilio Programmable Video for iOS
 
-This repository contains releases for the Twilio Programmable Video for iOS SDK.  These releases can be used on their own or the following line in your Cartfile:
+This repository contains releases for the Twilio Programmable Video for iOS SDK.  These releases can be used on their own, using Carthage or by CocoaPods.
 
-    github "twilio/twilio-video-ios"
-
-Please note that additional steps are required for successful integration of this SDK into your project.  Minimally, you must execute a script file during your build process to thin the SDK to only the architecture types you are building.  This is necessary before submission to the AppStore.  This script is located in the delivered .framework file, named `remove_archs`.
 
 ###Carthage Integration
 
-We support integration using Carthage binary frameworks. You can add Programmable Video for iOS by adding the following line to your Cartfile:
+1. We support integration using Carthage binary frameworks. You can add Programmable Video for iOS by adding the following line to your Cartfile:
 ```
 github "twilio/twilio-video-ios"
 ```
 
-Then run `carthage bootstrap` (or `carthage update` if you are updating your SDKs)
+1. Then run `carthage bootstrap` (or `carthage update` if you are updating your SDKs)
 
-The .framework file(s) will be downloaded to the Carthage/Build/iOS directory. The final step is to complete integration mentioned in the manual section in [add the SDK](https://www.twilio.com/docs/api/video/ios#add-the-sdk).
+1. On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script in which you specify your shell (ex: `/bin/sh`), add the following contents to the script area below the shell:
+
+    ```sh
+    /usr/local/bin/carthage copy-frameworks
+    ```
+
+1. Add the paths to the frameworks you want to use under “Input Files”, e.g.:
+
+    ```
+    $(SRCROOT)/Carthage/Build/iOS/Result.framework
+    $(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework
+    $(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework
+    
+###CocoaPods Integration
+
+We support integration using CocoaPods as well. Following is an example Podfile to consume Video SDK using CocoaPods:
+
+```
+source 'https://github.com/CocoaPods/Specs'
+
+platform :ios, '8.1'
+
+target 'TARGET_NAME' do
+    pod 'TwilioVideo', '~> 1.0'
+end
+```
+	
+Then run `pod install` to install the dependencies for your project.
