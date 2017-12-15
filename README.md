@@ -21,9 +21,8 @@ github "twilio/twilio-video-ios"
 1. Add the paths to the frameworks you want to use under “Input Files”, e.g.:
 
     ```
-    $(SRCROOT)/Carthage/Build/iOS/Result.framework
-    $(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework
-    $(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework
+    $(SRCROOT)/Carthage/Build/iOS/TwilioVideo.framework
+    ```
     
 ###CocoaPods Integration
 
