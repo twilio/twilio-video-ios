@@ -14,15 +14,15 @@ Then run `carthage bootstrap` (or `carthage update` if you are updating your SDK
 
 On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script in which you specify your shell (ex: `/bin/sh`), add the following contents to the script area below the shell:
 
-    ```sh
-    /usr/local/bin/carthage copy-frameworks
-    ```
+```sh
+/usr/local/bin/carthage copy-frameworks
+```
 
 Add the paths to the frameworks you want to use under “Input Files”, e.g.:
 
-    ```
-    $(SRCROOT)/Carthage/Build/iOS/TwilioVideo.framework
-    ```
+```
+$(SRCROOT)/Carthage/Build/iOS/TwilioVideo.framework
+```
     
 ### CocoaPods Integration
 
@@ -39,3 +39,7 @@ end
 ```
 	
 Then run `pod install` to install the dependencies for your project.
+
+### Manual Integration
+
+See [manual installation](https://www.twilio.com/docs/api/video/ios#add-the-sdk).
