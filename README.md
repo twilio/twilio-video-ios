@@ -3,28 +3,28 @@
 This repository contains releases for the Twilio Programmable Video for iOS SDK.  These releases can be used on their own, using Carthage or by CocoaPods.
 
 
-###Carthage Integration
+### Carthage Integration
 
 1. We support integration using Carthage binary frameworks. You can add Programmable Video for iOS by adding the following line to your Cartfile:
 ```
 github "twilio/twilio-video-ios"
 ```
 
-1. Then run `carthage bootstrap` (or `carthage update` if you are updating your SDKs)
+Then run `carthage bootstrap` (or `carthage update` if you are updating your SDKs)
 
-1. On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script in which you specify your shell (ex: `/bin/sh`), add the following contents to the script area below the shell:
+On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script in which you specify your shell (ex: `/bin/sh`), add the following contents to the script area below the shell:
 
     ```sh
     /usr/local/bin/carthage copy-frameworks
     ```
 
-1. Add the paths to the frameworks you want to use under “Input Files”, e.g.:
+Add the paths to the frameworks you want to use under “Input Files”, e.g.:
 
     ```
     $(SRCROOT)/Carthage/Build/iOS/TwilioVideo.framework
     ```
     
-###CocoaPods Integration
+### CocoaPods Integration
 
 We support integration using CocoaPods as well. Following is an example Podfile to consume Video SDK using CocoaPods:
 
