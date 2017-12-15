@@ -5,7 +5,7 @@ This repository contains releases for the Twilio Programmable Video for iOS SDK.
 
 ### Carthage Integration
 
-1. We support integration using Carthage binary frameworks. You can add Programmable Video for iOS by adding the following line to your Cartfile:
+We support integration using Carthage binary frameworks. You can add Programmable Video for iOS by adding the following line to your Cartfile:
 ```
 github "twilio/twilio-video-ios"
 ```
