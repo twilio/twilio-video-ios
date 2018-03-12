@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TVIError Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Twilio Video </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twilio Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TVIError Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>TVIError.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">TVIError</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>An enumeration indicating the errors that can be raised by the SDK.</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(NSInteger, TVIError ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorUnknown</a> = 0,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorAccessTokenInvalidError</a> = 20101,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorAccessTokenHeaderInvalidError</a> = 20102,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorAccessTokenIssuerInvalidError</a> = 20103,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorAccessTokenExpiredError</a> = 20104,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorAccessTokenNotYetValidError</a> = 20105,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorAccessTokenGrantsInvalidError</a> = 20106,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorAccessTokenSignatureInvalidError</a> = 20107,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorSignalingConnectionError</a> = 53000,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorSignalingConnectionDisconnectedError</a> = 53001,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorSignalingConnectionTimeoutError</a> = 53002,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorSignalingIncomingMessageInvalidError</a> = 53003,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorSignalingOutgoingMessageInvalidError</a> = 53004,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorRoomNameInvalidError</a> = 53100,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorRoomNameTooLongError</a> = 53101,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorRoomNameCharsInvalidError</a> = 53102,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorRoomCreateFailedError</a> = 53103,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorRoomConnectFailedError</a> = 53104,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorRoomMaxParticipantsExceededError</a> = 53105,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorRoomNotFoundError</a> = 53106,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorRoomMaxParticipantsOutOfRangeError</a> = 53107,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorRoomTypeInvalidError</a> = 53108,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorRoomTimeoutOutOfRangeError</a> = 53109,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorRoomStatusCallbackMethodInvalidError</a> = 53110,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorRoomStatusCallbackInvalidError</a> = 53111,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorRoomStatusInvalidError</a> = 53112,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorParticipantIdentityInvalidError</a> = 53200,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorParticipantIdentityTooLongError</a> = 53201,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorParticipantIdentityCharsInvalidError</a> = 53202,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorParticipantMaxTracksExceededError</a> = 53203,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorParticipantNotFoundError</a> = 53204,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorParticipantDuplicateIdentityError</a> = 53205,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorTrackInvalidError</a> = 53300,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorTrackNameInvalidError</a> = 53301,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorTrackNameTooLongError</a> = 53302,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorTrackNameCharsInvalidError</a> = 53303,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorMediaClientLocalDescFailedError</a> = 53400,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorMediaServerLocalDescFailedError</a> = 53401,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorMediaClientRemoteDescFailedError</a> = 53402,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorMediaServerRemoteDescFailedError</a> = 53403,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorMediaNoSupportedCodecError</a> = 53404,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorMediaConnectionError</a> = 53405,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorConfigurationAcquireFailedError</a> = 53500,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIErrorConfigurationAcquireTurnFailedError</a> = 53501,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="TVIErrorUnknown"></a><code>TVIErrorUnknown</code></dt>
+<dd>
+
+
+<p>An unknown error has occurred</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorAccessTokenInvalidError"></a><code>TVIErrorAccessTokenInvalidError</code></dt>
+<dd>
+
+
+<p>Invalid Access Token</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorAccessTokenHeaderInvalidError"></a><code>TVIErrorAccessTokenHeaderInvalidError</code></dt>
+<dd>
+
+
+<p>Invalid Access Token header</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorAccessTokenIssuerInvalidError"></a><code>TVIErrorAccessTokenIssuerInvalidError</code></dt>
+<dd>
+
+
+<p>Invalid Access Token issuer/subject</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorAccessTokenExpiredError"></a><code>TVIErrorAccessTokenExpiredError</code></dt>
+<dd>
+
+
+<p>Access Token expired or expiration date invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorAccessTokenNotYetValidError"></a><code>TVIErrorAccessTokenNotYetValidError</code></dt>
+<dd>
+
+
+<p>Access Token not yet valid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorAccessTokenGrantsInvalidError"></a><code>TVIErrorAccessTokenGrantsInvalidError</code></dt>
+<dd>
+
+
+<p>Invalid Access Token grants</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorAccessTokenSignatureInvalidError"></a><code>TVIErrorAccessTokenSignatureInvalidError</code></dt>
+<dd>
+
+
+<p>Invalid Access Token signature</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorSignalingConnectionError"></a><code>TVIErrorSignalingConnectionError</code></dt>
+<dd>
+
+
+<p>Signaling connection error</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorSignalingConnectionDisconnectedError"></a><code>TVIErrorSignalingConnectionDisconnectedError</code></dt>
+<dd>
+
+
+<p>Signaling connection disconnected</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorSignalingConnectionTimeoutError"></a><code>TVIErrorSignalingConnectionTimeoutError</code></dt>
+<dd>
+
+
+<p>Signaling connection timed out</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorSignalingIncomingMessageInvalidError"></a><code>TVIErrorSignalingIncomingMessageInvalidError</code></dt>
+<dd>
+
+
+<p>Client received an invalid signaling message</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorSignalingOutgoingMessageInvalidError"></a><code>TVIErrorSignalingOutgoingMessageInvalidError</code></dt>
+<dd>
+
+
+<p>Client sent an invalid signaling message</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorRoomNameInvalidError"></a><code>TVIErrorRoomNameInvalidError</code></dt>
+<dd>
+
+
+<p>Room name is invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorRoomNameTooLongError"></a><code>TVIErrorRoomNameTooLongError</code></dt>
+<dd>
+
+
+<p>Room name is too long</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorRoomNameCharsInvalidError"></a><code>TVIErrorRoomNameCharsInvalidError</code></dt>
+<dd>
+
+
+<p>Room name contains invalid characters</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorRoomCreateFailedError"></a><code>TVIErrorRoomCreateFailedError</code></dt>
+<dd>
+
+
+<p>Unable to create Room</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorRoomConnectFailedError"></a><code>TVIErrorRoomConnectFailedError</code></dt>
+<dd>
+
+
+<p>Unable to connect to Room</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorRoomMaxParticipantsExceededError"></a><code>TVIErrorRoomMaxParticipantsExceededError</code></dt>
+<dd>
+
+
+<p>Room contains too many Participants</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorRoomNotFoundError"></a><code>TVIErrorRoomNotFoundError</code></dt>
+<dd>
+
+
+<p>Room not found</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorRoomMaxParticipantsOutOfRangeError"></a><code>TVIErrorRoomMaxParticipantsOutOfRangeError</code></dt>
+<dd>
+
+
+<p>MaxParticipants is out of range</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorRoomTypeInvalidError"></a><code>TVIErrorRoomTypeInvalidError</code></dt>
+<dd>
+
+
+<p>RoomType is not valid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorRoomTimeoutOutOfRangeError"></a><code>TVIErrorRoomTimeoutOutOfRangeError</code></dt>
+<dd>
+
+
+<p>Timeout is out of range</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorRoomStatusCallbackMethodInvalidError"></a><code>TVIErrorRoomStatusCallbackMethodInvalidError</code></dt>
+<dd>
+
+
+<p>StatusCallbackMethod is invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorRoomStatusCallbackInvalidError"></a><code>TVIErrorRoomStatusCallbackInvalidError</code></dt>
+<dd>
+
+
+<p>StatusCallback is invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorRoomStatusInvalidError"></a><code>TVIErrorRoomStatusInvalidError</code></dt>
+<dd>
+
+
+<p>Status is invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorParticipantIdentityInvalidError"></a><code>TVIErrorParticipantIdentityInvalidError</code></dt>
+<dd>
+
+
+<p>Participant identity is invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorParticipantIdentityTooLongError"></a><code>TVIErrorParticipantIdentityTooLongError</code></dt>
+<dd>
+
+
+<p>Participant identity is too long</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorParticipantIdentityCharsInvalidError"></a><code>TVIErrorParticipantIdentityCharsInvalidError</code></dt>
+<dd>
+
+
+<p>Participant identity contains invalid characters</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorParticipantMaxTracksExceededError"></a><code>TVIErrorParticipantMaxTracksExceededError</code></dt>
+<dd>
+
+
+<p>Participant has too many Tracks</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorParticipantNotFoundError"></a><code>TVIErrorParticipantNotFoundError</code></dt>
+<dd>
+
+
+<p>Participant not found</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorParticipantDuplicateIdentityError"></a><code>TVIErrorParticipantDuplicateIdentityError</code></dt>
+<dd>
+
+
+<p>Participant disconnected because of duplicate identity</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorTrackInvalidError"></a><code>TVIErrorTrackInvalidError</code></dt>
+<dd>
+
+
+<p>Track is invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorTrackNameInvalidError"></a><code>TVIErrorTrackNameInvalidError</code></dt>
+<dd>
+
+
+<p>Track name is invalid</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorTrackNameTooLongError"></a><code>TVIErrorTrackNameTooLongError</code></dt>
+<dd>
+
+
+<p>Track name is too long</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorTrackNameCharsInvalidError"></a><code>TVIErrorTrackNameCharsInvalidError</code></dt>
+<dd>
+
+
+<p>Track name contains invalid characters</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorMediaClientLocalDescFailedError"></a><code>TVIErrorMediaClientLocalDescFailedError</code></dt>
+<dd>
+
+
+<p>Client is unable to create or apply a local media description</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorMediaServerLocalDescFailedError"></a><code>TVIErrorMediaServerLocalDescFailedError</code></dt>
+<dd>
+
+
+<p>Server is unable to create or apply a local media description</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorMediaClientRemoteDescFailedError"></a><code>TVIErrorMediaClientRemoteDescFailedError</code></dt>
+<dd>
+
+
+<p>Client is unable to apply a remote media description</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorMediaServerRemoteDescFailedError"></a><code>TVIErrorMediaServerRemoteDescFailedError</code></dt>
+<dd>
+
+
+<p>Server is unable to apply a remote media description</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorMediaNoSupportedCodecError"></a><code>TVIErrorMediaNoSupportedCodecError</code></dt>
+<dd>
+
+
+<p>No supported codec</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorMediaConnectionError"></a><code>TVIErrorMediaConnectionError</code></dt>
+<dd>
+
+
+<p>Media connection failed</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorConfigurationAcquireFailedError"></a><code>TVIErrorConfigurationAcquireFailedError</code></dt>
+<dd>
+
+
+<p>Unable to acquire configuration</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIErrorConfigurationAcquireTurnFailedError"></a><code>TVIErrorConfigurationAcquireTurnFailedError</code></dt>
+<dd>
+
+
+<p>Unable to acquire TURN credentials</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIError.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">TVIError.h</code></p>
+                    </div>
+                    
+                    
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Twilio Inc. All rights reserved. Updated: 2018-01-09</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2900316-33', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

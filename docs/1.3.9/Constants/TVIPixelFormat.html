@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TVIPixelFormat Constants Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Twilio Video </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twilio Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TVIPixelFormat Constants Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>TVIVideoFormat.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+
+                    
+                    <h3 class="subsubtitle method-title">TVIPixelFormat</h3>
+                    
+					
+					<div class="section section-overview">
+                        <p>The subset of Core Video pixel formats which are supported by <a href="../Protocols/TVIVideoCaptureConsumer.html"><code>TVIVideoCaptureConsumer</code></a>.</p>
+					</div>
+					
+					
+                    <div class="section">
+                        <!-- display enum values -->
+                        
+                        <h4 class="method-subtitle">Definition</h4>
+                        <code>typedef NS_ENUM(OSType, TVIPixelFormat ) {<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIPixelFormat32ARGB</a> = kCVPixelFormatType_32ARGB,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIPixelFormat32BGRA</a> = kCVPixelFormatType_32BGRA,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIPixelFormatYUV420BiPlanarVideoRange</a> = kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIPixelFormatYUV420BiPlanarFullRange</a> = kCVPixelFormatType_420YpCbCr8BiPlanarFullRange,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIPixelFormatYUV420PlanarVideoRange</a> = kCVPixelFormatType_420YpCbCr8Planar,<br>
+                            
+                            &nbsp;&nbsp; <a href="">TVIPixelFormatYUV420PlanarFullRange</a> = kCVPixelFormatType_420YpCbCr8PlanarFullRange,<br>
+                            
+                            };</code>
+                    
+                    </div>
+                    
+                    <div class="section section-methods">
+                        <h4 class="method-subtitle">Constants</h4>
+                        <dl class="termdef">
+                            
+                            <dt><a name="" title="TVIPixelFormat32ARGB"></a><code>TVIPixelFormat32ARGB</code></dt>
+<dd>
+
+
+<p>32-bit ARGB.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIVideoFormat.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIPixelFormat32BGRA"></a><code>TVIPixelFormat32BGRA</code></dt>
+<dd>
+
+
+<p>32-bit BGRA.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIVideoFormat.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIPixelFormatYUV420BiPlanarVideoRange"></a><code>TVIPixelFormatYUV420BiPlanarVideoRange</code></dt>
+<dd>
+
+
+<p>Bi-Planar Component Y'CbCr 8-bit 4:2:0, video-range (luma=[16,235] chroma=[16,240]). baseAddr points to a big-endian CVPlanarPixelBufferInfo_YCbCrBiPlanar struct.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIVideoFormat.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIPixelFormatYUV420BiPlanarFullRange"></a><code>TVIPixelFormatYUV420BiPlanarFullRange</code></dt>
+<dd>
+
+
+<p>Bi-Planar Component Y'CbCr 8-bit 4:2:0, full-range (luma=[0,255] chroma=[1,255]). baseAddr points to a big-endian CVPlanarPixelBufferInfo_YCbCrBiPlanar struct.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIVideoFormat.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIPixelFormatYUV420PlanarVideoRange"></a><code>TVIPixelFormatYUV420PlanarVideoRange</code></dt>
+<dd>
+
+
+<p>Planar Component Y'CbCr 8-bit 4:2:0. baseAddr points to a big-endian CVPlanarPixelBufferInfo_YCbCrPlanar struct.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIVideoFormat.h</code>.
+	</p>
+	
+</dd>
+                            
+                            <dt><a name="" title="TVIPixelFormatYUV420PlanarFullRange"></a><code>TVIPixelFormatYUV420PlanarFullRange</code></dt>
+<dd>
+
+
+<p>Planar Component Y'CbCr 8-bit 4:2:0, full range. baseAddr points to a big-endian CVPlanarPixelBufferInfo_YCbCrPlanar struct.</p>
+
+
+
+
+
+    
+	<p>
+		Declared In <code class="declared-in-ref">TVIVideoFormat.h</code>.
+	</p>
+	
+</dd>
+                            
+                        </dl>
+                    </div>
+                    
+
+                    
+                    
+
+                    
+
+                    
+                    <div class="method-subsection declared-in-section">
+                        <h4 class="method-subtitle">Declared In</h4>
+                        <p><code class="declared-in-ref">TVIVideoFormat.h</code></p>
+                    </div>
+                    
+                    
+                    
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Twilio Inc. All rights reserved. Updated: 2018-01-09</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2900316-33', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
