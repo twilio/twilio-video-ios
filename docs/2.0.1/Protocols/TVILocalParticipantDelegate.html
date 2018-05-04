@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TVILocalParticipantDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Twilio Video </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twilio Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/localParticipant:failedToPublishAudioTrack:withError:">- localParticipant:failedToPublishAudioTrack:withError:</option>
+		
+		<option value="//api/name/localParticipant:failedToPublishDataTrack:withError:">- localParticipant:failedToPublishDataTrack:withError:</option>
+		
+		<option value="//api/name/localParticipant:failedToPublishVideoTrack:withError:">- localParticipant:failedToPublishVideoTrack:withError:</option>
+		
+		<option value="//api/name/localParticipant:publishedAudioTrack:">- localParticipant:publishedAudioTrack:</option>
+		
+		<option value="//api/name/localParticipant:publishedDataTrack:">- localParticipant:publishedDataTrack:</option>
+		
+		<option value="//api/name/localParticipant:publishedVideoTrack:">- localParticipant:publishedVideoTrack:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TVILocalParticipantDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TVILocalParticipant.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>TVILocalParticipantDelegate</code> provides callbacks when important events happen to a <code>TVILocalParticipant</code>.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/localParticipant:publishedAudioTrack:" title="localParticipant:publishedAudioTrack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/localParticipant:publishedAudioTrack:">&ndash;&nbsp;localParticipant:publishedAudioTrack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the Local Participant successfully publishes an audio track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)localParticipant:(nonnull TVILocalParticipant *)<em>participant</em> publishedAudioTrack:(nonnull TVILocalAudioTrackPublication *)<em>publishedAudioTrack</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The local participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publishedAudioTrack</code></th>
+						<td><p>The <code>TVILocalAudioTrackPublication</code> object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVILocalParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/localParticipant:failedToPublishAudioTrack:withError:" title="localParticipant:failedToPublishAudioTrack:withError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/localParticipant:failedToPublishAudioTrack:withError:">&ndash;&nbsp;localParticipant:failedToPublishAudioTrack:withError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the publication of an audio track fails.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)localParticipant:(nonnull TVILocalParticipant *)<em>participant</em> failedToPublishAudioTrack:(nonnull TVILocalAudioTrack *)<em>audioTrack</em> withError:(nonnull NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The local participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>audioTrack</code></th>
+						<td><p>The audio track that failed publication.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>An <code>NSError</code> object describing the reason for the failure.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVILocalParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/localParticipant:publishedDataTrack:" title="localParticipant:publishedDataTrack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/localParticipant:publishedDataTrack:">&ndash;&nbsp;localParticipant:publishedDataTrack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the Local Participant successfully publishes a data track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)localParticipant:(nonnull TVILocalParticipant *)<em>participant</em> publishedDataTrack:(nonnull TVILocalDataTrackPublication *)<em>publishedDataTrack</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The local participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publishedDataTrack</code></th>
+						<td><p>The <code>TVILocalDataTrackPublication</code> object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVILocalParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/localParticipant:failedToPublishDataTrack:withError:" title="localParticipant:failedToPublishDataTrack:withError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/localParticipant:failedToPublishDataTrack:withError:">&ndash;&nbsp;localParticipant:failedToPublishDataTrack:withError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the publication of a data track fails.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)localParticipant:(nonnull TVILocalParticipant *)<em>participant</em> failedToPublishDataTrack:(nonnull TVILocalDataTrack *)<em>dataTrack</em> withError:(nonnull NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The local participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dataTrack</code></th>
+						<td><p>The data track that failed publication.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>An <code>NSError</code> object describing the reason for the failure.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVILocalParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/localParticipant:publishedVideoTrack:" title="localParticipant:publishedVideoTrack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/localParticipant:publishedVideoTrack:">&ndash;&nbsp;localParticipant:publishedVideoTrack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the Local Participant successfully publishes a video track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)localParticipant:(nonnull TVILocalParticipant *)<em>participant</em> publishedVideoTrack:(nonnull TVILocalVideoTrackPublication *)<em>publishedVideoTrack</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The local participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publishedVideoTrack</code></th>
+						<td><p>The <code>TVILocalVideoTrackPublication</code> object.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVILocalParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/localParticipant:failedToPublishVideoTrack:withError:" title="localParticipant:failedToPublishVideoTrack:withError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/localParticipant:failedToPublishVideoTrack:withError:">&ndash;&nbsp;localParticipant:failedToPublishVideoTrack:withError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the publication of a video track fails.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)localParticipant:(nonnull TVILocalParticipant *)<em>participant</em> failedToPublishVideoTrack:(nonnull TVILocalVideoTrack *)<em>videoTrack</em> withError:(nonnull NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The local participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoTrack</code></th>
+						<td><p>The video track that failed publication.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>An <code>NSError</code> object describing the reason for the failure.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVILocalParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Twilio Inc. All rights reserved. Updated: 2018-05-02</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2900316-33', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
