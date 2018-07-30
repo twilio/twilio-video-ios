@@ -2,7 +2,7 @@
 
 > **Notice - iOS 12.0 compatibility**
 >
-> Please note that **2.3.0-preview1 and earlier versions of the Programmable Video iOS SDK may have compatibility issues with iOS 12.0, due in September 2018**. In Apple's next major release, WebRTC classes prefixed with `RTC` are present in `WebCore.framework` and may conflict with WebRTC based software in your apps. To find out more information, and determine if you are impacted please review the following knowledge base [article](https://support.twilio.com/hc/en-us/articles/360002897814-Legacy-Twilio-Programmable-Voice-SDKs-impacted-by-SSL-certificate-deprecation).
+> Please note that **2.3.0-preview1 and earlier versions of the Programmable Video iOS SDK may have compatibility issues with iOS 12.0, due in September 2018**. In Apple's next major release, WebRTC classes prefixed with `RTC` are present in `WebCore.framework` and may conflict with WebRTC based libraries in your apps. To find out more information, and determine if you are impacted please review the following knowledge base [article](https://support.twilio.com/hc/en-us/articles/360002897814-Legacy-Twilio-Programmable-Voice-SDKs-impacted-by-SSL-certificate-deprecation).
 
 This repository contains releases of Twilio's Programmable Video SDK for iOS. These releases can be consumed manually, or via Carthage or CocoaPods.
 
