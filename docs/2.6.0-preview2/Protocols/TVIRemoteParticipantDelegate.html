@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>TVIRemoteParticipantDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Twilio Video </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Twilio Inc.</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/failedToSubscribeToAudioTrack:error:forParticipant:">- failedToSubscribeToAudioTrack:error:forParticipant:</option>
+		
+		<option value="//api/name/failedToSubscribeToDataTrack:error:forParticipant:">- failedToSubscribeToDataTrack:error:forParticipant:</option>
+		
+		<option value="//api/name/failedToSubscribeToVideoTrack:error:forParticipant:">- failedToSubscribeToVideoTrack:error:forParticipant:</option>
+		
+		<option value="//api/name/remoteParticipant:disabledAudioTrack:">- remoteParticipant:disabledAudioTrack:</option>
+		
+		<option value="//api/name/remoteParticipant:disabledVideoTrack:">- remoteParticipant:disabledVideoTrack:</option>
+		
+		<option value="//api/name/remoteParticipant:enabledAudioTrack:">- remoteParticipant:enabledAudioTrack:</option>
+		
+		<option value="//api/name/remoteParticipant:enabledVideoTrack:">- remoteParticipant:enabledVideoTrack:</option>
+		
+		<option value="//api/name/remoteParticipant:publishedAudioTrack:">- remoteParticipant:publishedAudioTrack:</option>
+		
+		<option value="//api/name/remoteParticipant:publishedDataTrack:">- remoteParticipant:publishedDataTrack:</option>
+		
+		<option value="//api/name/remoteParticipant:publishedVideoTrack:">- remoteParticipant:publishedVideoTrack:</option>
+		
+		<option value="//api/name/remoteParticipant:unpublishedAudioTrack:">- remoteParticipant:unpublishedAudioTrack:</option>
+		
+		<option value="//api/name/remoteParticipant:unpublishedDataTrack:">- remoteParticipant:unpublishedDataTrack:</option>
+		
+		<option value="//api/name/remoteParticipant:unpublishedVideoTrack:">- remoteParticipant:unpublishedVideoTrack:</option>
+		
+		<option value="//api/name/subscribedToAudioTrack:publication:forParticipant:">- subscribedToAudioTrack:publication:forParticipant:</option>
+		
+		<option value="//api/name/subscribedToDataTrack:publication:forParticipant:">- subscribedToDataTrack:publication:forParticipant:</option>
+		
+		<option value="//api/name/subscribedToVideoTrack:publication:forParticipant:">- subscribedToVideoTrack:publication:forParticipant:</option>
+		
+		<option value="//api/name/unsubscribedFromAudioTrack:publication:forParticipant:">- unsubscribedFromAudioTrack:publication:forParticipant:</option>
+		
+		<option value="//api/name/unsubscribedFromDataTrack:publication:forParticipant:">- unsubscribedFromDataTrack:publication:forParticipant:</option>
+		
+		<option value="//api/name/unsubscribedFromVideoTrack:publication:forParticipant:">- unsubscribedFromVideoTrack:publication:forParticipant:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">TVIRemoteParticipantDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>TVIRemoteParticipant.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>TVIRemoteParticipantDelegate</code> provides callbacks when important changes to a <code>TVIRemoteParticipant</code> occur.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/remoteParticipant:publishedVideoTrack:" title="remoteParticipant:publishedVideoTrack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remoteParticipant:publishedVideoTrack:">&ndash;&nbsp;remoteParticipant:publishedVideoTrack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the Participant publishes a video track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)remoteParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em> publishedVideoTrack:(nonnull TVIRemoteVideoTrackPublication *)<em>publication</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote video track publication.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remoteParticipant:unpublishedVideoTrack:" title="remoteParticipant:unpublishedVideoTrack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remoteParticipant:unpublishedVideoTrack:">&ndash;&nbsp;remoteParticipant:unpublishedVideoTrack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the Participant unpublishes a video track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)remoteParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em> unpublishedVideoTrack:(nonnull TVIRemoteVideoTrackPublication *)<em>publication</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote video track publication.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remoteParticipant:publishedAudioTrack:" title="remoteParticipant:publishedAudioTrack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remoteParticipant:publishedAudioTrack:">&ndash;&nbsp;remoteParticipant:publishedAudioTrack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the Participant publishes an audio track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)remoteParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em> publishedAudioTrack:(nonnull TVIRemoteAudioTrackPublication *)<em>publication</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote audio track publication.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remoteParticipant:unpublishedAudioTrack:" title="remoteParticipant:unpublishedAudioTrack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remoteParticipant:unpublishedAudioTrack:">&ndash;&nbsp;remoteParticipant:unpublishedAudioTrack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the Participant unpublishes an audio track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)remoteParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em> unpublishedAudioTrack:(nonnull TVIRemoteAudioTrackPublication *)<em>publication</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote audio track publication.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remoteParticipant:publishedDataTrack:" title="remoteParticipant:publishedDataTrack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remoteParticipant:publishedDataTrack:">&ndash;&nbsp;remoteParticipant:publishedDataTrack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the Participant publishes a data track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)remoteParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em> publishedDataTrack:(nonnull TVIRemoteDataTrackPublication *)<em>publication</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote data track publication.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remoteParticipant:unpublishedDataTrack:" title="remoteParticipant:unpublishedDataTrack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remoteParticipant:unpublishedDataTrack:">&ndash;&nbsp;remoteParticipant:unpublishedDataTrack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the Participant unpublishes a data track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)remoteParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em> unpublishedDataTrack:(nonnull TVIRemoteDataTrackPublication *)<em>publication</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote data track publication.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remoteParticipant:enabledVideoTrack:" title="remoteParticipant:enabledVideoTrack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remoteParticipant:enabledVideoTrack:">&ndash;&nbsp;remoteParticipant:enabledVideoTrack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the Participant enables a video track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)remoteParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em> enabledVideoTrack:(nonnull TVIRemoteVideoTrackPublication *)<em>publication</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote video track publication.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remoteParticipant:disabledVideoTrack:" title="remoteParticipant:disabledVideoTrack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remoteParticipant:disabledVideoTrack:">&ndash;&nbsp;remoteParticipant:disabledVideoTrack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the Participant disables a video track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)remoteParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em> disabledVideoTrack:(nonnull TVIRemoteVideoTrackPublication *)<em>publication</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote video track publication.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remoteParticipant:enabledAudioTrack:" title="remoteParticipant:enabledAudioTrack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remoteParticipant:enabledAudioTrack:">&ndash;&nbsp;remoteParticipant:enabledAudioTrack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the Participant enables an audio track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)remoteParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em> enabledAudioTrack:(nonnull TVIRemoteAudioTrackPublication *)<em>publication</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote audio track publication.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/remoteParticipant:disabledAudioTrack:" title="remoteParticipant:disabledAudioTrack:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/remoteParticipant:disabledAudioTrack:">&ndash;&nbsp;remoteParticipant:disabledAudioTrack:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the Participant disables an audio track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)remoteParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em> disabledAudioTrack:(nonnull TVIRemoteAudioTrackPublication *)<em>publication</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote audio track publication.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/subscribedToVideoTrack:publication:forParticipant:" title="subscribedToVideoTrack:publication:forParticipant:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/subscribedToVideoTrack:publication:forParticipant:">&ndash;&nbsp;subscribedToVideoTrack:publication:forParticipant:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the local Participant has succesfully subscribed to the Participant&rsquo;s remote video track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)subscribedToVideoTrack:(nonnull TVIRemoteVideoTrack *)<em>videoTrack</em> publication:(nonnull TVIRemoteVideoTrackPublication *)<em>publication</em> forParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoTrack</code></th>
+						<td><p>The remote video track.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote video track publication.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/failedToSubscribeToVideoTrack:error:forParticipant:" title="failedToSubscribeToVideoTrack:error:forParticipant:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/failedToSubscribeToVideoTrack:error:forParticipant:">&ndash;&nbsp;failedToSubscribeToVideoTrack:error:forParticipant:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the local Participant has failed to subscribe to the Participant&rsquo;s remote video track publication.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)failedToSubscribeToVideoTrack:(nonnull TVIRemoteVideoTrackPublication *)<em>publication</em> error:(nonnull NSError *)<em>error</em> forParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote video track publication.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>The error which indicates why the subscription failed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unsubscribedFromVideoTrack:publication:forParticipant:" title="unsubscribedFromVideoTrack:publication:forParticipant:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unsubscribedFromVideoTrack:publication:forParticipant:">&ndash;&nbsp;unsubscribedFromVideoTrack:publication:forParticipant:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the local Participant has succesfully unsubscribed from the Participant&rsquo;s remote video track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unsubscribedFromVideoTrack:(nonnull TVIRemoteVideoTrack *)<em>videoTrack</em> publication:(nonnull TVIRemoteVideoTrackPublication *)<em>publication</em> forParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>videoTrack</code></th>
+						<td><p>The remote video track.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote video track publication.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/subscribedToAudioTrack:publication:forParticipant:" title="subscribedToAudioTrack:publication:forParticipant:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/subscribedToAudioTrack:publication:forParticipant:">&ndash;&nbsp;subscribedToAudioTrack:publication:forParticipant:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the local Participant has succesfully subscribed to the Participant&rsquo;s remote audio track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)subscribedToAudioTrack:(nonnull TVIRemoteAudioTrack *)<em>audioTrack</em> publication:(nonnull TVIRemoteAudioTrackPublication *)<em>publication</em> forParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>audioTrack</code></th>
+						<td><p>The remote audio track.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote audio track publication.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/failedToSubscribeToAudioTrack:error:forParticipant:" title="failedToSubscribeToAudioTrack:error:forParticipant:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/failedToSubscribeToAudioTrack:error:forParticipant:">&ndash;&nbsp;failedToSubscribeToAudioTrack:error:forParticipant:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the local Participant has failed to subscribe to the Participant&rsquo;s remote audio track publication.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)failedToSubscribeToAudioTrack:(nonnull TVIRemoteAudioTrackPublication *)<em>publication</em> error:(nonnull NSError *)<em>error</em> forParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote audio track publication.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>The error which indicates why the subscription failed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unsubscribedFromAudioTrack:publication:forParticipant:" title="unsubscribedFromAudioTrack:publication:forParticipant:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unsubscribedFromAudioTrack:publication:forParticipant:">&ndash;&nbsp;unsubscribedFromAudioTrack:publication:forParticipant:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the local Participant has succesfully unsubscribed from the Participant&rsquo;s remote audio track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unsubscribedFromAudioTrack:(nonnull TVIRemoteAudioTrack *)<em>audioTrack</em> publication:(nonnull TVIRemoteAudioTrackPublication *)<em>publication</em> forParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>audioTrack</code></th>
+						<td><p>The remote audio track.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote audio track publication.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/subscribedToDataTrack:publication:forParticipant:" title="subscribedToDataTrack:publication:forParticipant:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/subscribedToDataTrack:publication:forParticipant:">&ndash;&nbsp;subscribedToDataTrack:publication:forParticipant:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the local Participant has succesfully subscribed to the Participant&rsquo;s remote data track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)subscribedToDataTrack:(nonnull TVIRemoteDataTrack *)<em>dataTrack</em> publication:(nonnull TVIRemoteDataTrackPublication *)<em>publication</em> forParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dataTrack</code></th>
+						<td><p>The remote data track.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote data track publication.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/failedToSubscribeToDataTrack:error:forParticipant:" title="failedToSubscribeToDataTrack:error:forParticipant:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/failedToSubscribeToDataTrack:error:forParticipant:">&ndash;&nbsp;failedToSubscribeToDataTrack:error:forParticipant:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the local Participant has failed to subscribe to the Participant&rsquo;s remote data track publication.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)failedToSubscribeToDataTrack:(nonnull TVIRemoteDataTrackPublication *)<em>publication</em> error:(nonnull NSError *)<em>error</em> forParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote data track publication.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>The error which indicates why the subscription failed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unsubscribedFromDataTrack:publication:forParticipant:" title="unsubscribedFromDataTrack:publication:forParticipant:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unsubscribedFromDataTrack:publication:forParticipant:">&ndash;&nbsp;unsubscribedFromDataTrack:publication:forParticipant:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Delegate method called when the local Participant has succesfully unsubscribed from the Participant&rsquo;s remote data track.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)unsubscribedFromDataTrack:(nonnull TVIRemoteDataTrack *)<em>dataTrack</em> publication:(nonnull TVIRemoteDataTrackPublication *)<em>publication</em> forParticipant:(nonnull TVIRemoteParticipant *)<em>participant</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dataTrack</code></th>
+						<td><p>The remote data track.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>publication</code></th>
+						<td><p>The remote data track publication.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>participant</code></th>
+						<td><p>The remote Participant.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">TVIRemoteParticipant.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2018 Twilio Inc. All rights reserved. Updated: 2018-12-12</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-2900316-33', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
