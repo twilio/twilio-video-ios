@@ -4,7 +4,7 @@
 >  * [Video Guides](https://www.twilio.com/docs/api/video)
 >  * [Changelog](https://www.twilio.com/docs/api/video/changelog-twilio-video-ios-version-2x)
 > 
-> If this is an issue with the SDK itself, file it here. If this is an issue with the QuickStart apps, please use [video-quickstart-swift](https://github.com/twilio/video-quickstart-swift/issues) or [video-quickstart-objc](https://github.com/twilio/video-quickstart-objc/issues) instead.
+> If this is an issue with the SDK itself, file it here. If this is an issue with the QuickStart apps, please use [video-quickstart-ios](https://github.com/twilio/video-quickstart-ios/issues).
 >
 > Please ensure that you are not sharing any
 [Personally Identifiable Information(PII)](https://www.twilio.com/docs/glossary/what-is-personally-identifiable-information-pii)
