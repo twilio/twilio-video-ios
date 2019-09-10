@@ -57,9 +57,9 @@ iOS 13 introduces new UIScene APIs to better manage navigation hierarchy and lif
 
 **Status:** We are currently investigating the impact of UIScene, and compatibility with Twilio Video classes.
 
-7. **Swift UI**
+7. **SwiftUI**
 
-**Status:** We are still evaluating Swift UI on iOS 13. Integrators should note that `TVIVideoView` does not specify an `intrinsicContentSize`.
+**Status:** We are still evaluating SwiftUI on iOS 13. Integrators should note that `TVIVideoView` does not specify an `intrinsicContentSize`.
 
 8. **iPadOS**
 
