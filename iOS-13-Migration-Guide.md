@@ -67,7 +67,22 @@ iPadOS 13.0 will be released on September 30th and offers a brand new multi-task
 
 **Status:** We are still evaluating compatibility with iPadOS 13 and expect to provide an update soon.
 
-### Sample Code & Framework Integrations
+9. **Swift Naming Conflicts (3.0.0-beta4)**
+
+When compiling the [3.0.0-beta examples](https://github.com/twilio/video-quickstart-ios/tree/3.0.0-beta/), the Objective-C class `TVIAudioCodec` conflicts with the `AudioCodec` type definition from AudioToolbox.framework when compiled with Xcode 11.
+
+**Resolution:** The [examples](https://github.com/twilio/video-quickstart-ios/tree/3.0.0-beta/) were updated to eliminate the conflict. If you are experiencing conflicts with the Swift translation of Twilio Video classes, then refer to the classes using their fully qualified name:
+
+```.swift
+// Both frameworks define the Swift name AudioCodec
+import AudioToolbox
+import TwilioVideo
+
+// Specify the Twilio class by its full name
+var audioCodec: TwilioVideo.AudioCodec?
+```
+
+### Sample Code
 
 1. **CallKit**
 
@@ -88,21 +103,6 @@ If you use a broadcast extension in iOS 13.0-beta8 there is also a memory leak t
 If you use `ExampleReplayKitAudioCapturer` to capture application audio samples, then you may experience distortion on iOS 13.0 due to changes in the audio format used by ReplayKit.
 
 **Resolution:** Refer to the updated example app ([master](https://github.com/twilio/video-quickstart-ios/tree/master/ReplayKitExample), [3.0.0-beta](https://github.com/twilio/video-quickstart-ios/tree/3.0.0-beta/ReplayKitExample)) for iOS 13 support. Consider disabling `RPBroadcastSystemPickerView` on iOS 13.0 using a runtime check until iOS 13.1 is available.
-
-3. **Swift Naming Conflicts (3.0.0-beta)**
-
-When compiling the [3.0.0-beta examples](https://github.com/twilio/video-quickstart-ios/tree/3.0.0-beta/), the Objective-C class `TVIAudioCodec` conflicts with the `AudioCodec` type definition from AudioToolbox.framework when compiled with Xcode 11.
-
-**Resolution:** The [examples](https://github.com/twilio/video-quickstart-ios/tree/3.0.0-beta/) were updated to eliminate the conflict. If you are experiencing conflicts with the Swift translation of Twilio Video classes, then refer to the classes using their fully qualified name:
-
-```.swift
-// Both frameworks define the Swift name AudioCodec
-import AudioToolbox
-import TwilioVideo
-
-// Specify the Twilio class by its full name
-var audioCodec: TwilioVideo.AudioCodec?
-```
 
 ## Feedback
 
