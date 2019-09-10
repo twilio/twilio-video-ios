@@ -67,7 +67,7 @@ iPadOS 13.0 will be released on September 30th and offers a brand new multi-task
 
 **Status:** We are still evaluating compatibility with iPadOS 13 and expect to provide an update soon.
 
-### Sample Code & Framework Integrations
+### Sample Code
 
 1. **CallKit**
 
