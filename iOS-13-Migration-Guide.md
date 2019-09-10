@@ -1,6 +1,6 @@
 # Twilio Video - iOS 13 Migration Guide
 
-The guide explains how to prepare your Twilio Video apps for compatibility with iOS 13.
+The guide explains how to prepare your Twilio Video apps for compatibility with iOS 13 and iPadOS 13.
 
 ## Supported SDKs
 
