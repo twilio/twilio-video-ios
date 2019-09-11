@@ -2,6 +2,7 @@
 
 This repository contains releases of Twilio's Programmable Video SDK for iOS. These releases can be consumed manually, or via Carthage or CocoaPods.
 
+> NOTE: If you are updating your application for iOS 13 and iPadOS 13 please read our [iOS 13 Migration Guide](iOS-13-Migration-Guide.md).
 
 ### Carthage Integration
 
@@ -33,10 +34,10 @@ We support integration using CocoaPods as well. You can add Programmable Video t
 ```
 source 'https://github.com/CocoaPods/Specs'
 
-platform :ios, '8.1'
+platform :ios, '9.0'
 
 target 'TARGET_NAME' do
-    pod 'TwilioVideo', '~> 1.0'
+    pod 'TwilioVideo', '~> 2.0'
 end
 ```
 	
@@ -49,8 +50,7 @@ See [manual installation](https://www.twilio.com/docs/api/video/ios#add-the-sdk)
 ## Issues and Support
 
 Please file any issues you find here on Github.
-Please ensure that you are not sharing any
-[Personally Identifiable Information(PII)](https://www.twilio.com/docs/glossary/what-is-personally-identifiable-information-pii)
-or sensitive account information (API keys, credentials, etc.) when reporting an issue.
+
+Please ensure that you are not sharing any [Personally Identifiable Information(PII)](https://www.twilio.com/docs/glossary/what-is-personally-identifiable-information-pii) or sensitive account information (API keys, credentials, etc.) when reporting an issue.
 
 For general inquiries related to the Video SDK you can file a [support ticket](https://support.twilio.com/hc/en-us/requests/new).
