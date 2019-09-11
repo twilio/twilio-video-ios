@@ -36,7 +36,7 @@ See issue [#53](https://github.com/twilio/twilio-video-ios/issues/53).
 
 4. **TVIVideoView - OpenGL ES crashes on iOS Simulator**
 
-The SDK will crash when rendering decoded H.264 video, or any other frames in the `TVIPixelFormatYUV420BiPlanarVideoRange` or `TVIPixelFormatYUV420BiPlanarFullRange` formats when using the iOS 13.0 simulator.
+The SDK will crash when rendering decoded H.264 video, or any other frames in the `TVIPixelFormatYUV420BiPlanarVideoRange` or `TVIPixelFormatYUV420BiPlanarFullRange` formats when using Xcode 11.0 and an iOS 13.0 simulator.
 
 **Resolution:** Update Twilio Video to [3.0.0-beta4](https://www.twilio.com/docs/video/changelog-twilio-video-ios-version-3x#300-beta4-september-6-2019), or 2.10.2 (coming soon). Use an older simulator model for testing if your deployment target is earlier than 13.0.
 
