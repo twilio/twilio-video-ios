@@ -4,7 +4,7 @@ The guide explains how to prepare your Twilio Video apps for compatibility with 
 
 ## Supported SDKs
 
-We recommend that you use the latest patch releases of our SDKs. At this time, we have verified our [2.10.1](https://www.twilio.com/docs/video/changelog-twilio-video-ios-version-2x#2101-august-16-2019), and [3.0.0-beta4](https://www.twilio.com/docs/video/changelog-twilio-video-ios-version-3x#300-beta4-september-6-2019) SDKs for compatibility with iOS 13.0-beta8 and 13.1-beta2.
+We recommend that you use the latest patch releases of our SDKs. At this time, we have verified our [2.10.1](https://www.twilio.com/docs/video/changelog-twilio-video-ios-version-2x#2101-august-16-2019), and [3.0.0-beta4](https://www.twilio.com/docs/video/changelog-twilio-video-ios-version-3x#300-beta4-september-6-2019) SDKs for compatibility with iOS 13.0 and 13.1-beta2.
 
 ## Known Issues
 
@@ -16,7 +16,7 @@ We are tracking several issues related to both the Video SDK itself and the [exa
 
 Twilio Video does not support Catalyst applications at this time. If you are interested in this feature please let us know in [#49](https://github.com/twilio/twilio-video-ios/issues/49).
 
-2. **TVICameraSource - Background Task Completion Errors**
+2. **TVICameraSource - Background task completion errors**
 
 When `TVICameraSource` starts capturing it begins a background task to ensure that the video pipeline is flushed in the case of an interruption. In iOS 13.0, ending background tasks might send spurious logs to the console:
 
@@ -26,36 +26,67 @@ When `TVICameraSource` starts capturing it begins a background task to ensure th
 > 
 > 2019-09-03 13:44:21.979 VideoCallKitQuickStart[983:48546] Can't end BackgroundTask: no background task exists with identifier 3 (0x3), or it may have already been ended. Break in UIApplicationEndBackgroundTaskError() to debug.
 
-**Status:** We have given feedback to Apple, and hope that this issue can be resolved during the iOS 13 release cycle.
+**Status:** This issue is reproducible on iOS 13.0. We have given feedback to Apple, and hope that this issue can be resolved during the iOS 13 release cycle.
 
-3. **TVICameraSource - Distorted video after device usage interruption**
+3. **TVICameraSource, TVICameraCapturer - Distorted video after being interrupted by an AVCaptureSession**
 
 See issue [#53](https://github.com/twilio/twilio-video-ios/issues/53). 
 
-**Status:** We are still investigating this report and may issue patch releases of our SDK to address it.
+**Status:** This bug is reproducible on iOS 13.0. We are actively investigating a fix for our 2.x and 3.0 SDKs.
 
 4. **TVIVideoView - OpenGL ES crashes on iOS Simulator**
 
-The SDK will crash when rendering decoded H.264 video, or any other frames in the `TVIPixelFormatYUV420BiPlanarVideoRange` or `TVIPixelFormatYUV420BiPlanarFullRange` formats when using the iOS 13.0 simulator.
+The SDK will crash when rendering decoded H.264 video, or any other frames in the `TVIPixelFormatYUV420BiPlanarVideoRange` or `TVIPixelFormatYUV420BiPlanarFullRange` formats when using Xcode 11.0 and an iOS 13.0 simulator.
 
 **Resolution:** Update Twilio Video to [3.0.0-beta4](https://www.twilio.com/docs/video/changelog-twilio-video-ios-version-3x#300-beta4-september-6-2019), or 2.10.2 (coming soon). Use an older simulator model for testing if your deployment target is earlier than 13.0.
 
 5. **TVIVideoView - Metal on the iOS Simulator**
 
-At the moment, Twilio Video does not support Metal on the iOS 13.0 simulator.
+At the moment, Twilio Video does not support Metal on the iOS 13.0 or iPadOS 13.0 simulators.
 
 **Status:** We will provide an update once iOS 13.0 and macOS 10.15 are released.
 
 6. **UIScene & UIApplication Lifecycle**
 
-iOS 13 introduces new UIScene APIs to better manage navigation hierarchy and lifecycle events. Twilio Video has several classes that register for UIApplication lifecycle notifications, and continue to do so in iOS 13:
+iOS 13 introduces new [UIScene](https://developer.apple.com/documentation/uikit/uiscene) APIs to manage multiple instances of your app's UI, and handle UI lifecycle events. Twilio Video has several classes that register for UIApplication notifications and continue to do so on iOS 13:
 
-- TVIVideoView
-- TVICameraSource
-- TVICameraCapturer (2.x only)
-- TVIRoom (2.x only)
+- TVIVideoView: To render with the GPU only while the application is active.
+- TVICameraSource: To apply orientation tags to video frames.
+- TVICameraCapturer: To apply orientation tags to video frames (2.x).
+- TVIRoom: For connection management (2.x).
 
-**Status:** We are currently investigating the impact of UIScene, and compatibility with Twilio Video classes.
+**Status:** More evaluation of single and multi-window scenes is needed.
+
+We have conducted initial tests on iOS 13.0 with single window scenes using internal and public apps. The UIApplication notifications needed by Video classes are still fired in this environment:
+
+* UIApplicationDidBecomeActiveNotification
+* UIApplicationWillChangeStatusBarOrientationNotification
+* UIApplicationWillEnterForegroundNotification
+* UIApplicationWillResignActiveNotification
+
+The following .plist manifest was used for testing:
+
+```
+<key>UIApplicationSceneManifest</key>
+<dict>
+	<key>UIApplicationSupportsMultipleScenes</key>
+	<false/>
+	<key>UISceneConfigurations</key>
+	<dict>
+		<key>UIWindowSceneSessionRoleApplication</key>
+		<array>
+			<dict>
+				<key>UISceneConfigurationName</key>
+				<string>Default Configuration</string>
+				<key>UISceneDelegateClassName</key>
+				<string>YourApp.SceneDelegate</string>
+				<key>UISceneStoryboardFile</key>
+				<string>Main</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+```
 
 7. **SwiftUI**
 
@@ -65,7 +96,7 @@ iOS 13 introduces new UIScene APIs to better manage navigation hierarchy and lif
 
 iPadOS 13.0 will be released on September 30th and offers a brand new multi-tasking user interface.
 
-**Status:** We are still evaluating compatibility with iPadOS 13 and expect to provide an update soon.
+**Status:** We are still evaluating compatibility with iPadOS 13 and will provide an update soon.
 
 ### Sample Code
 
