@@ -48,14 +48,45 @@ At the moment, Twilio Video does not support Metal on the iOS 13.0 or iPadOS 13.
 
 6. **UIScene & UIApplication Lifecycle**
 
-iOS 13 introduces new [UIScene](https://developer.apple.com/documentation/uikit/uiscene) APIs to manage multiple instances of your app's UI, and handle lifecycle events. Twilio Video has several classes that register for UIApplication notifications and continue to do so on iOS 13:
+iOS 13 introduces new [UIScene](https://developer.apple.com/documentation/uikit/uiscene) APIs to manage multiple instances of your app's UI, and handle UI lifecycle events. Twilio Video has several classes that register for UIApplication notifications and continue to do so on iOS 13:
 
 - TVIVideoView: To render with the GPU only while the application is active.
 - TVICameraSource: To apply orientation tags to video frames.
 - TVICameraCapturer: To apply orientation tags to video frames (2.x).
 - TVIRoom: For connection management (2.x).
 
-**Status:** We are currently investigating the impact of UIScene, and compatibility with Twilio Video classes.
+**Status:** More evaluation of single and multi-window scenes is needed.
+
+We have conducted initial tests on iOS 13.0 with single window scenes using internal and public apps. The UIApplication notifications needed by Video classes are still fired in this environment:
+
+* UIApplicationDidBecomeActiveNotification
+* UIApplicationWillChangeStatusBarOrientationNotification
+* UIApplicationWillEnterForegroundNotification
+* UIApplicationWillResignActiveNotification
+
+The following .plist manifest was used for testing:
+
+```
+<key>UIApplicationSceneManifest</key>
+<dict>
+	<key>UIApplicationSupportsMultipleScenes</key>
+	<false/>
+	<key>UISceneConfigurations</key>
+	<dict>
+		<key>UIWindowSceneSessionRoleApplication</key>
+		<array>
+			<dict>
+				<key>UISceneConfigurationName</key>
+				<string>Default Configuration</string>
+				<key>UISceneDelegateClassName</key>
+				<string>YourApp.SceneDelegate</string>
+				<key>UISceneStoryboardFile</key>
+				<string>Main</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+```
 
 7. **SwiftUI**
 
