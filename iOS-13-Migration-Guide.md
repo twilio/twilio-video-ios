@@ -108,11 +108,11 @@ Starting a `TVIDefaultAudioDevice` [might fail](https://forums.developer.apple.c
 
 2. **ReplayKit**
 
-The [ReplayKit Framework](https://developer.apple.com/documentation/replaykit) received some significant enhancements in iOS 13, resolving problems with delayed application audio and the reliability of `RPScreenRecorder`. However, there is also a [serious bug](https://stackoverflow.com/questions/57163212/get-nsinvalidargumentexception-when-trying-to-present-rpsystembroadcastpickervie) in iOS 13.0-beta8 (fixed in 13.1-beta2) that can cause a crash when using [RPSystemBroadcastPickerView](https://developer.apple.com/documentation/replaykit/rpsystembroadcastpickerview?language=objc).
+The [ReplayKit Framework](https://developer.apple.com/documentation/replaykit) received some significant enhancements in iOS 13, resolving problems with delayed application audio and the reliability of `RPScreenRecorder`. However, there is also a [serious bug](https://stackoverflow.com/questions/57163212/get-nsinvalidargumentexception-when-trying-to-present-rpsystembroadcastpickervie) in iOS 13.0 (fixed in 13.1-beta2) that can cause a crash when using [RPSystemBroadcastPickerView](https://developer.apple.com/documentation/replaykit/rpsystembroadcastpickerview).
 
 <img src="images/replaykit-broadcast-picker-ios-13.0.png"/>
 
-If you use a broadcast extension in iOS 13.0-beta8 there is also a memory leak that will result in a crash when the microphone is enabled. This crash is resolved in iOS 13.1-beta2.
+If you use a broadcast extension (`com.apple.broadcast-services-upload`) on iOS 13.0 there is also a memory leak that will result in a crash when the microphone is enabled. This crash is resolved in iOS 13.1-beta2.
 
 <img src="images/replaykit-broadcast-mic-ios13-audio-resource-limit.png"/>
 
