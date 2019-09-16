@@ -102,7 +102,7 @@ iPadOS 13.0 will be released on September 30th and offers a brand new multi-task
 
 1. **CallKit**
 
-Starting a `TVIDefaultAudioDevice` [might fail](https://forums.developer.apple.com/thread/120038) when the Participant’s device reports an incoming call to CallKit while backgrounded in iOS 12.4 or 13.0-beta8.
+Starting a `TVIDefaultAudioDevice` [might fail](https://forums.developer.apple.com/thread/120038) when the Participant’s device reports an incoming call to CallKit while backgrounded in iOS 12.4 or 13.0.
 
 **Status:** This issue should be resolved in iOS 13.1. We will retest with the latest beta release to confirm.
 
