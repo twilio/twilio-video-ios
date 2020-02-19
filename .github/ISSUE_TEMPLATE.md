@@ -45,7 +45,7 @@ Debug level logs are helpful when investigating issues. To enable debug level lo
 TwilioVideoSDK.setLogLevel(.debug)
 ```
 
-```.swift
+```
 // Log output when the issue occurs
 ```
 
