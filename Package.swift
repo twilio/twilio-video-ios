@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TwilioVideo",
-            url: "https://github.com/twilio/twilio-video-ios/releases/download/4.0.0/TwilioVideo.xcframework.zip",
-            checksum: "cf77225e3c2f81a99bef29f6820d4e660386b92902f13fc17076d1745fa2e258"
+            url: "https://github.com/twilio/twilio-video-ios/releases/download/4.0.1/TwilioVideo.xcframework.zip",
+            checksum: "66fde713cf7038d1906f859d482e833d0dd76c70f2f860eefddc83f86bbb831b"
         )
     ]
 )
