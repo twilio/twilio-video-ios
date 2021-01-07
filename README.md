@@ -1,32 +1,27 @@
 # Twilio Programmable Video for iOS
 
-This repository contains releases of Twilio's Programmable Video SDK for iOS. These releases can be consumed manually, or via Carthage or CocoaPods.
+This repository contains releases of Twilio's Programmable Video SDK for iOS. These releases can be consumed using Swift Package Manager, CocoaPods or manual integration into your project.
 
 > NOTE: If you are updating your application for iOS 13 and iPadOS 13 please read our [iOS 13 Migration Guide](iOS-13-Migration-Guide.md).
 
-### Carthage Integration
 
-We support integration using Carthage binary frameworks. You can add Programmable Video to your project by adding the following line to your Cartfile:
-```
-github "twilio/twilio-video-ios"
-```
+### Swift Package Manager
 
-Then run `carthage bootstrap` (or `carthage update` if you are updating your SDKs)
+You can add Programmable Video for iOS by adding the `https://github.com/twilio/twilio-video-ios` repository as a Swift Package.
 
-On your application targets’ “General” settings tab, in the “Linked Frameworks and Libraries” section, drag and drop each framework you want to use from the Carthage/Build folder on disk.
+In your Build Settings, you will also need to modify `Other Linker Flags` to include `-ObjC.`
 
-On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase”. Create a Run Script in which you specify your shell (ex: `/bin/sh`), add the following contents to the script area below the shell:
+As of the latest release of Xcode (currently 12.3), there is a [known issue](https://bugs.swift.org/browse/SR-13343) with consuming binary frameworks distributed via Swift Package Manager. The current workaround to this issue is to add a `Run Script Phase` to the `Build Phases` of your Xcode project. This `Run Script Phase` should come **after** the `Embed Frameworks` build phase. This new `Run Script Phase` should contain the following code:
 
 ```sh
-/usr/local/bin/carthage copy-frameworks
+find "${CODESIGNING_FOLDER_PATH}" -name '*.framework' -print0 | while read -d $'\0' framework
+do
+    codesign --force --deep --sign "${EXPANDED_CODE_SIGN_IDENTITY}" --preserve-metadata=identifier,entitlements --timestamp=none "${framework}"
+done
+
 ```
 
-Add the paths to the frameworks you want to use under “Input Files”, e.g.:
 
-```
-$(SRCROOT)/Carthage/Build/iOS/TwilioVideo.framework
-```
-    
 ### CocoaPods Integration
 
 We support integration using CocoaPods as well. You can add Programmable Video to your project using the following example Podfile:
@@ -34,18 +29,25 @@ We support integration using CocoaPods as well. You can add Programmable Video t
 ```
 source 'https://github.com/CocoaPods/Specs'
 
-platform :ios, '11.0'
+platform :ios, '12.0'
 
 target 'TARGET_NAME' do
-    pod 'TwilioVideo', '~> 3.0'
+    pod 'TwilioVideo', '~> 4.0'
 end
 ```
-	
+
 Then run `pod install` to install the dependencies for your project.
+
 
 ### Manual Integration
 
 See [manual installation](https://www.twilio.com/docs/api/video/ios#add-the-sdk) steps.
+
+
+### Carthage Integration
+
+Carthage is not currently a supported distribution mechanism for Twilio Video. Carthage does not currently work with .xcframeworks as documented [here](https://github.com/Carthage/Carthage/issues/2890). Once Carthage supports binary `.xcframeworks`, Carthage distribution will be re-added.
+
 
 ## Issues and Support
 
