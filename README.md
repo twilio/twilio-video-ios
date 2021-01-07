@@ -46,7 +46,7 @@ See [manual installation](https://www.twilio.com/docs/api/video/ios#add-the-sdk)
 
 ### Carthage Integration
 
-Carthage is not currently a supported distribution mechanism for Twilio Video. Carthage does not currently work with .xcframeworks as documented [here](https://github.com/Carthage/Carthage/issues/2890). Once Carthage supports binary `.xcframeworks`, Carthage distribution will be re-added.
+Carthage is not currently a supported distribution mechanism for Twilio Video. Carthage does not currently work with `.xcframeworks` as documented [here](https://github.com/Carthage/Carthage/issues/2890). Once Carthage supports binary `.xcframeworks`, Carthage distribution will be re-added.
 
 
 ## Issues and Support
