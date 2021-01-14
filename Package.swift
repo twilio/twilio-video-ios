@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "TwilioVideo",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v11)
     ],
     products: [
         .library(
@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "TwilioVideo",
-            url: "https://github.com/twilio/twilio-video-ios/releases/download/4.0.1/TwilioVideo.xcframework.zip",
-            checksum: "66fde713cf7038d1906f859d482e833d0dd76c70f2f860eefddc83f86bbb831b"
+            url: "https://github.com/twilio/twilio-video-ios/releases/download/4.1.0/TwilioVideo.xcframework.zip",
+            checksum: "416437007d88d55fbd9e631cc6d60523abf269f8a5dc218d1d0ca343d35554d3"
         )
     ]
 )
