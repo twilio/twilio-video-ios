@@ -32,7 +32,7 @@ source 'https://github.com/CocoaPods/Specs'
 platform :ios, '11.0'
 
 target 'TARGET_NAME' do
-    pod 'TwilioVideo', '~> 4.1'
+    pod 'TwilioVideo', '~> 4.2'
 end
 ```
 
