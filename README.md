@@ -2,9 +2,6 @@
 
 This repository contains releases of Twilio's Programmable Video SDK for iOS. These releases can be consumed using Swift Package Manager, CocoaPods or manual integration into your project.
 
-> NOTE: If you are updating your application for iOS 13 and iPadOS 13 please read our [iOS 13 Migration Guide](iOS-13-Migration-Guide.md).
-
-
 ### Swift Package Manager
 
 You can add Programmable Video for iOS by adding the `https://github.com/twilio/twilio-video-ios` repository as a Swift Package.
