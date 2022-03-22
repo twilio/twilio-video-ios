@@ -26,7 +26,7 @@ We support integration using CocoaPods as well. You can add Programmable Video t
 ```
 source 'https://github.com/CocoaPods/Specs'
 
-platform :ios, '9.0'
+platform :ios, '12.2'
 
 target 'TARGET_NAME' do
     pod 'TwilioVideo', '~> 5.1'
