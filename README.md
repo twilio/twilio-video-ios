@@ -29,7 +29,7 @@ source 'https://github.com/CocoaPods/Specs'
 platform :ios, '12.2'
 
 target 'TARGET_NAME' do
-    pod 'TwilioVideo', '~> 5.1'
+    pod 'TwilioVideo', '~> 5.2'
 end
 ```
 
