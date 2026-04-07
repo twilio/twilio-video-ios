@@ -27,12 +27,12 @@ Then run `pod install` to install the dependencies for your project.
 To integrate the static framework, use the `TwilioVideo-static` pod:
 
 ```
-  pod 'TwilioVideo-static', '~> 5.10'
+  pod 'TwilioVideo-static', '~> 5.11'
 ```
 
 ### Manual Integration
 
-See [manual installation](https://www.twilio.com/docs/api/video/ios#add-the-sdk) steps.
+See [manual installation](https://www.twilio.com/docs/video/ios-getting-started#manual) steps.
 
 ## Issues and Support
 
@@ -40,7 +40,7 @@ Please file any issues you find here on Github.
 
 Please ensure that you are not sharing any [Personally Identifiable Information(PII)](https://www.twilio.com/docs/glossary/what-is-personally-identifiable-information-pii) or sensitive account information (API keys, credentials, etc.) when reporting an issue.
 
-For general inquiries related to the Video SDK you can file a [support ticket](https://support.twilio.com/hc/en-us/requests/new).
+For general inquiries related to the Video SDK you can file a [support ticket](https://help.twilio.com/).
 
 
 ## License
