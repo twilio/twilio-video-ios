@@ -1,0 +1,47 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/ec2-user/.buildkite-agent/builds/ip-10-3-44-0-ec2-internal-zlk6ls/twilio/twilio-video-ios-internal/temp/TwilioVideoPreprocessedDocs/TVIAudioDevice.h",
+      "line": 11,
+      "symbol": "TVIAudioDeviceContext",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ec2-user/.buildkite-agent/builds/ip-10-3-44-0-ec2-internal-zlk6ls/twilio/twilio-video-ios-internal/temp/TwilioVideoPreprocessedDocs/TVIBackgroundProcessor.h",
+      "line": 21,
+      "symbol": "TVIBackgroundProcessor.-processFrameBuffer:videoSink:orientation:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ec2-user/.buildkite-agent/builds/ip-10-3-44-0-ec2-internal-zlk6ls/twilio/twilio-video-ios-internal/temp/TwilioVideoPreprocessedDocs/TVIDefaultAudioDevice.h",
+      "line": 14,
+      "symbol": "kTVIDefaultAudioDeviceIOBufferDurationSimulator",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ec2-user/.buildkite-agent/builds/ip-10-3-44-0-ec2-internal-zlk6ls/twilio/twilio-video-ios-internal/temp/TwilioVideoPreprocessedDocs/TVIDefaultAudioDevice.h",
+      "line": 17,
+      "symbol": "kTVIDefaultAudioDeviceSampleRateSimulator",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ec2-user/.buildkite-agent/builds/ip-10-3-44-0-ec2-internal-zlk6ls/twilio/twilio-video-ios-internal/temp/TwilioVideoPreprocessedDocs/TVIError.h",
+      "line": 16,
+      "symbol": "kTVIErrorDomain",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ec2-user/.buildkite-agent/builds/ip-10-3-44-0-ec2-internal-zlk6ls/twilio/twilio-video-ios-internal/temp/TwilioVideoPreprocessedDocs/TVIIceOptions.h",
+      "line": 100,
+      "symbol": "TVIIceOptionsBuilder.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/ec2-user/.buildkite-agent/builds/ip-10-3-44-0-ec2-internal-zlk6ls/twilio/twilio-video-ios-internal/temp/TwilioVideoPreprocessedDocs"
+}
