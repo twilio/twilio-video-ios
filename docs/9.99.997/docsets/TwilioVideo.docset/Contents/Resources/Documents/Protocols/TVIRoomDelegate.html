@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TVIRoomDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/TVIRoomDelegate" class="dashAnchor"></a>
+    <a title="TVIRoomDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Twilio Video</a> (99% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">TwilioVideo</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Protocols.html">Protocols</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        TVIRoomDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/TVIAppScreenSource.html">TVIAppScreenSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIAppScreenSourceOptions.html">TVIAppScreenSourceOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIAppScreenSourceOptionsBuilder.html">TVIAppScreenSourceOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIAudioCodec.html">TVIAudioCodec</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIAudioFormat.html">TVIAudioFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIAudioOptions.html">TVIAudioOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIAudioOptionsBuilder.html">TVIAudioOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIAudioTrack.html">TVIAudioTrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIAudioTrackPublication.html">TVIAudioTrackPublication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIBandwidthProfileOptions.html">TVIBandwidthProfileOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIBaseTrackStats.html">TVIBaseTrackStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVICameraPreviewView.html">TVICameraPreviewView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVICameraSource.html">TVICameraSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVICameraSourceOptions.html">TVICameraSourceOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVICameraSourceOptionsBuilder.html">TVICameraSourceOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIConnectOptions.html">TVIConnectOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIConnectOptionsBuilder.html">TVIConnectOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIDataTrack.html">TVIDataTrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIDataTrackOptions.html">TVIDataTrackOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIDataTrackOptionsBuilder.html">TVIDataTrackOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIDataTrackPublication.html">TVIDataTrackPublication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIDefaultAudioDevice.html">TVIDefaultAudioDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIEncodingParameters.html">TVIEncodingParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIG722Codec.html">TVIG722Codec</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIH264Codec.html">TVIH264Codec</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIIceCandidatePairStats.html">TVIIceCandidatePairStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIIceCandidateStats.html">TVIIceCandidateStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIIceOptions.html">TVIIceOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIIceOptionsBuilder.html">TVIIceOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIIceServer.html">TVIIceServer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVILocalAudioTrack.html">TVILocalAudioTrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVILocalAudioTrackPublication.html">TVILocalAudioTrackPublication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVILocalAudioTrackStats.html">TVILocalAudioTrackStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVILocalDataTrack.html">TVILocalDataTrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVILocalDataTrackPublication.html">TVILocalDataTrackPublication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVILocalParticipant.html">TVILocalParticipant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVILocalTrackPublicationOptions.html">TVILocalTrackPublicationOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVILocalTrackStats.html">TVILocalTrackStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVILocalVideoTrack.html">TVILocalVideoTrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVILocalVideoTrackPublication.html">TVILocalVideoTrackPublication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVILocalVideoTrackStats.html">TVILocalVideoTrackStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVINetworkQualityConfiguration.html">TVINetworkQualityConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIOpusCodec.html">TVIOpusCodec</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIParticipant.html">TVIParticipant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIPcmaCodec.html">TVIPcmaCodec</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIPcmuCodec.html">TVIPcmuCodec</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIRemoteAudioTrack.html">TVIRemoteAudioTrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIRemoteAudioTrackPublication.html">TVIRemoteAudioTrackPublication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIRemoteAudioTrackStats.html">TVIRemoteAudioTrackStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIRemoteDataTrack.html">TVIRemoteDataTrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIRemoteDataTrackPublication.html">TVIRemoteDataTrackPublication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIRemoteParticipant.html">TVIRemoteParticipant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIRemoteTrackStats.html">TVIRemoteTrackStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIRemoteVideoTrack.html">TVIRemoteVideoTrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIRemoteVideoTrackPublication.html">TVIRemoteVideoTrackPublication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIRemoteVideoTrackStats.html">TVIRemoteVideoTrackStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIRoom.html">TVIRoom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVISampleBufferVideoView.html">TVISampleBufferVideoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIStatsReport.html">TVIStatsReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVITrack.html">TVITrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVITrackPublication.html">TVITrackPublication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIUserInterfaceTracker.html">TVIUserInterfaceTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVideoBandwidthProfileOptions.html">TVIVideoBandwidthProfileOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVideoBandwidthProfileOptionsBuilder.html">TVIVideoBandwidthProfileOptionsBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVideoCodec.html">TVIVideoCodec</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVideoContentPreferences.html">TVIVideoContentPreferences</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVideoContentPreferencesBuilder.html">TVIVideoContentPreferencesBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVideoDimensions.html">TVIVideoDimensions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVideoFormat.html">TVIVideoFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVideoFrame.html">TVIVideoFrame</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVideoRenderDimensions.html">TVIVideoRenderDimensions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVideoTrack.html">TVIVideoTrack</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVideoTrackPublication.html">TVIVideoTrackPublication</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVideoTrackStoringSampleBufferVideoView.html">TVIVideoTrackStoringSampleBufferVideoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVideoView.html">TVIVideoView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVp8Codec.html">TVIVp8Codec</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TVIVp9Codec.html">TVIVp9Codec</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TwilioVideoSDK.html">TwilioVideoSDK</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIAudioChannelsMono">TVIAudioChannelsMono</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIAudioChannelsStereo">TVIAudioChannelsStereo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIAudioSampleRate16000">TVIAudioSampleRate16000</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIAudioSampleRate24000">TVIAudioSampleRate24000</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIAudioSampleRate32000">TVIAudioSampleRate32000</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIAudioSampleRate44100">TVIAudioSampleRate44100</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIAudioSampleRate48000">TVIAudioSampleRate48000</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIAudioSampleRate8000">TVIAudioSampleRate8000</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIBandwidthProfileModeCollaboration">TVIBandwidthProfileModeCollaboration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIBandwidthProfileModeGrid">TVIBandwidthProfileModeGrid</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIBandwidthProfileModePresentation">TVIBandwidthProfileModePresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIClientTrackSwitchOffControlAuto">TVIClientTrackSwitchOffControlAuto</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIClientTrackSwitchOffControlManual">TVIClientTrackSwitchOffControlManual</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVITrackPriorityHigh">TVITrackPriorityHigh</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVITrackPriorityLow">TVITrackPriorityLow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVITrackPriorityStandard">TVITrackPriorityStandard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVITrackSwitchOffModeDetected">TVITrackSwitchOffModeDetected</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVITrackSwitchOffModeDisabled">TVITrackSwitchOffModeDisabled</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVITrackSwitchOffModePredicted">TVITrackSwitchOffModePredicted</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIVideoContentPreferencesModeAuto">TVIVideoContentPreferencesModeAuto</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIVideoContentPreferencesModeManual">TVIVideoContentPreferencesModeManual</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@TVIVideoEncodingModeAuto">TVIVideoEncodingModeAuto</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kTVIAppScreenSourceErrorDomain">kTVIAppScreenSourceErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kTVICameraSourceErrorDomain">kTVICameraSourceErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kTVIDataTrackOptionsDefaultMaxPacketLifeTime">kTVIDataTrackOptionsDefaultMaxPacketLifeTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kTVIDataTrackOptionsDefaultMaxRetransmits">kTVIDataTrackOptionsDefaultMaxRetransmits</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TVIDefaultAudioDevice.h@kTVIDefaultAVAudioSessionConfigurationBlock">kTVIDefaultAVAudioSessionConfigurationBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TVIDefaultAudioDevice.h@kTVIDefaultAudioDeviceIOBufferDurationSimulator">kTVIDefaultAudioDeviceIOBufferDurationSimulator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:TVIDefaultAudioDevice.h@kTVIDefaultAudioDeviceSampleRateSimulator">kTVIDefaultAudioDeviceSampleRateSimulator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@kTVIErrorDomain">kTVIErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/TVIAppScreenSourceError.html">TVIAppScreenSourceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVICameraSourceError.html">TVICameraSourceError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVICameraSourceOptionsRotationTags.html">TVICameraSourceOptionsRotationTags</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVIError.html">TVIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVIIceCandidatePairState.html">TVIIceCandidatePairState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVIIceTransportPolicy.html">TVIIceTransportPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVILocalNetworkPrivacyPolicy.html">TVILocalNetworkPrivacyPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVILogLevel.html">TVILogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVILogModule.html">TVILogModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVINetworkQualityLevel.html">TVINetworkQualityLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVINetworkQualityVerbosity.html">TVINetworkQualityVerbosity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVIParticipantState.html">TVIParticipantState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVIPixelFormat.html">TVIPixelFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVIRoomState.html">TVIRoomState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVIScreenContent.html">TVIScreenContent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVITrackState.html">TVITrackState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TVIVideoOrientation.html">TVIVideoOrientation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/TVIAppScreenSourceDelegate.html">TVIAppScreenSourceDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)TVIAudioDevice">TVIAudioDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVIAudioDeviceCapturer.html">TVIAudioDeviceCapturer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVIAudioDeviceRenderer.html">TVIAudioDeviceRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVIAudioSink.html">TVIAudioSink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVIBackgroundProcessor.html">TVIBackgroundProcessor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVICameraSourceDelegate.html">TVICameraSourceDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVICameraSourceOrientationDelegate.html">TVICameraSourceOrientationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVICameraSourceOrientationTracker.html">TVICameraSourceOrientationTracker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVILocalParticipantDelegate.html">TVILocalParticipantDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVIRemoteDataTrackDelegate.html">TVIRemoteDataTrackDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVIRemoteParticipantDelegate.html">TVIRemoteParticipantDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVIRoomDelegate.html">TVIRoomDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVISampleBufferVideoViewDelegate.html">TVISampleBufferVideoViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVIVideoRenderer.html">TVIVideoRenderer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVIVideoSink.html">TVIVideoSink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVIVideoSource.html">TVIVideoSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TVIVideoViewDelegate.html">TVIVideoViewDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type%20Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIDefaultAudioDevice.h@T@TVIAVAudioSessionConfigurationBlock">TVIAVAudioSessionConfigurationBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIAppScreenSourceOptions.h@T@TVIAppScreenSourceOptionsBuilderBlock">TVIAppScreenSourceOptionsBuilderBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIAppScreenSource.h@T@TVIAppScreenSourceStartedBlock">TVIAppScreenSourceStartedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIAppScreenSource.h@T@TVIAppScreenSourceStoppedBlock">TVIAppScreenSourceStoppedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIAudioDevice.h@T@TVIAudioDeviceContext">TVIAudioDeviceContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIAudioDevice.h@T@TVIAudioDeviceWorkerBlock">TVIAudioDeviceWorkerBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIAudioOptions.h@T@TVIAudioOptionsBuilderBlock">TVIAudioOptionsBuilderBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIVideoBandwidthProfileOptions.h@T@TVIBandwidthProfileMode">TVIBandwidthProfileMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVICameraSourceOptions.h@T@TVICameraSourceOptionsBuilderBlock">TVICameraSourceOptionsBuilderBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVICameraSource.h@T@TVICameraSourceStartedBlock">TVICameraSourceStartedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVICameraSource.h@T@TVICameraSourceStoppedBlock">TVICameraSourceStoppedBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIVideoBandwidthProfileOptions.h@T@TVIClientTrackSwitchOffControl">TVIClientTrackSwitchOffControl</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIConnectOptions.h@T@TVIConnectOptionsBuilderBlock">TVIConnectOptionsBuilderBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIDataTrackOptions.h@T@TVIDataTrackOptionsBuilderBlock">TVIDataTrackOptionsBuilderBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIIceOptions.h@T@TVIIceOptionsBuilderBlock">TVIIceOptionsBuilderBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIRoom.h@T@TVIRoomGetStatsBlock">TVIRoomGetStatsBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVITrackPriority.h@T@TVITrackPriority">TVITrackPriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIVideoBandwidthProfileOptions.h@T@TVITrackSwitchOffMode">TVITrackSwitchOffMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIVideoBandwidthProfileOptions.h@T@TVIVideoBandwidthProfileOptionsBuilderBlock">TVIVideoBandwidthProfileOptionsBuilderBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIVideoContentPreferences.h@T@TVIVideoContentPreferencesBuilderBlock">TVIVideoContentPreferencesBuilderBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIVideoBandwidthProfileOptions.h@T@TVIVideoContentPreferencesMode">TVIVideoContentPreferencesMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type%20Definitions.html#/c:TVIVideoEncodingMode.h@T@TVIVideoEncodingMode">TVIVideoEncodingMode</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@TVIAudioDeviceExecuteWorkerBlock">TVIAudioDeviceExecuteWorkerBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@TVIAudioDeviceFormatChanged">TVIAudioDeviceFormatChanged</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@TVIAudioDeviceReadRenderData">TVIAudioDeviceReadRenderData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@TVIAudioDeviceReinitialize">TVIAudioDeviceReinitialize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@TVIAudioDeviceWriteCaptureData">TVIAudioDeviceWriteCaptureData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:TVIVideoFrame.h@F@TVIVideoOrientationIsRotated">TVIVideoOrientationIsRotated</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:TVIVideoFrame.h@F@TVIVideoOrientationIsValid">TVIVideoOrientationIsValid</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:TVIVideoFrame.h@F@TVIVideoOrientationMakeTransform">TVIVideoOrientationMakeTransform</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TVIRoomDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <p class="aside-title">Objective-C</p>
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">TVIRoomDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">TVIRoomDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>TVIRoomDelegate</code> provides callbacks when important changes to a <code><a href="../Classes/TVIRoom.html">TVIRoom</a></code> occur.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TVIRoomDelegate(im)didConnectToRoom:"></a>
+                    <a name="//apple_ref/objc/Method/-didConnectToRoom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TVIRoomDelegate(im)didConnectToRoom:">-didConnectToRoom:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@brief This method is invoked when connecting to the Room succeeds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didConnectToRoom</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRoom.html">TVIRoom</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">room</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didConnect</span><span class="p">(</span><span class="n">to</span> <span class="nv">room</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRoom.html">TVIRoom</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>room</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Room for which connection succeeded.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TVIRoomDelegate(im)room:didFailToConnectWithError:"></a>
+                    <a name="//apple_ref/objc/Method/-room:didFailToConnectWithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TVIRoomDelegate(im)room:didFailToConnectWithError:">-room:<wbr>didFailToConnectWithError:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@brief This method is invoked when connecting to the Room fails.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">room</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRoom.html">TVIRoom</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">room</span>
+    <span class="nf">didFailToConnectWithError</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">room</span><span class="p">(</span><span class="n">_</span> <span class="nv">room</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRoom.html">TVIRoom</a></span><span class="p">,</span> <span class="n">didFailToConnectWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="n">any</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>room</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Room for which connection failed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error encountered during the connection attempt.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TVIRoomDelegate(im)room:didDisconnectWithError:"></a>
+                    <a name="//apple_ref/objc/Method/-room:didDisconnectWithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TVIRoomDelegate(im)room:didDisconnectWithError:">-room:<wbr>didDisconnectWithError:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@brief This method is invoked when the Client disconnects from a Room.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">room</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRoom.html">TVIRoom</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">room</span>
+    <span class="nf">didDisconnectWithError</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">room</span><span class="p">(</span><span class="n">_</span> <span class="nv">room</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRoom.html">TVIRoom</a></span><span class="p">,</span> <span class="n">didDisconnectWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="p">(</span><span class="n">any</span> <span class="kt">Error</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>room</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Room from which the Client disconnected.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An NSError describing why disconnect occurred, or nil if the disconnect was initiated locally.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TVIRoomDelegate(im)room:isReconnectingWithError:"></a>
+                    <a name="//apple_ref/objc/Method/-room:isReconnectingWithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TVIRoomDelegate(im)room:isReconnectingWithError:">-room:<wbr>isReconnectingWithError:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@brief This method is invoked when the Client is attempting to reconnect to a Room due to a network disruption.</p>
+
+<p>@discussion This method is invoked when the Client is attempting to reconnect to a Room due to a network disruption.
+  The possible errors which could occur are <code>TVIErrorSignalingConnectionDisconnectedError</code> and
+  <code>TVIErrorMediaConnectionError</code>. During a media reconnection signaling related methods may continue to be
+  invoked.</p>
+
+<p>There are certain instances when an application is put into the background that both the signaling and media
+  connection are closed which will cause this delegate method to be invoked.</p>
+<pre class="highlight objective_c"><code><span class="k">-</span> <span class="n">When</span> <span class="n">connected</span> <span class="n">to</span> <span class="n">a</span> <span class="n">Peer</span><span class="k">-</span><span class="n">to</span><span class="k">-</span><span class="n">Peer</span> <span class="n">Room</span> <span class="n">with</span> <span class="n">no</span> <span class="n">Remote</span> <span class="n">Participants</span><span class="p">.</span>
+<span class="k">-</span> <span class="n">When</span> <span class="n">connected</span> <span class="n">to</span> <span class="n">a</span> <span class="n">Peer</span><span class="k">-</span><span class="n">to</span><span class="k">-</span><span class="n">Peer</span> <span class="n">Room</span> <span class="n">with</span> <span class="n">other</span> <span class="n">Remote</span> <span class="n">Participants</span> <span class="n">and</span> <span class="n">no</span> <span class="n">shared</span> <span class="n">audio</span> <span class="n">tracks</span><span class="p">.</span>
+<span class="k">-</span> <span class="n">When</span> <span class="n">connected</span> <span class="n">to</span> <span class="n">a</span> <span class="n">Group</span> <span class="n">Room</span> <span class="n">with</span> <span class="n">no</span> <span class="n">shared</span> <span class="n">audio</span> <span class="n">tracks</span><span class="p">.</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">room</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRoom.html">TVIRoom</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">room</span>
+    <span class="nf">isReconnectingWithError</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">room</span><span class="p">(</span><span class="n">_</span> <span class="nv">room</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRoom.html">TVIRoom</a></span><span class="p">,</span> <span class="n">isReconnectingWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="n">any</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>room</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Room for which the Client is attempting to reconnect.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An NSError describing why the Client is reconnecting.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TVIRoomDelegate(im)didReconnectToRoom:"></a>
+                    <a name="//apple_ref/objc/Method/-didReconnectToRoom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TVIRoomDelegate(im)didReconnectToRoom:">-didReconnectToRoom:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@brief This method is invoked after the Client has reconnected to a Room following a network disruption.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didReconnectToRoom</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRoom.html">TVIRoom</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">room</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didReconnect</span><span class="p">(</span><span class="n">to</span> <span class="nv">room</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRoom.html">TVIRoom</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>room</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Room which the Client has been reconnected.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TVIRoomDelegate(im)room:participantDidConnect:"></a>
+                    <a name="//apple_ref/objc/Method/-room:participantDidConnect:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TVIRoomDelegate(im)room:participantDidConnect:">-room:<wbr>participantDidConnect:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@brief This method is invoked when a Remote Participant connects to the Room.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">room</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRoom.html">TVIRoom</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">room</span>
+    <span class="nf">participantDidConnect</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRemoteParticipant.html">TVIRemoteParticipant</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">participant</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">room</span><span class="p">(</span><span class="n">_</span> <span class="nv">room</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRoom.html">TVIRoom</a></span><span class="p">,</span> <span class="n">participantDidConnect</span> <span class="nv">participant</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRemoteParticipant.html">TVIRemoteParticipant</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>room</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Room to which a Remote Participant connected.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>participant</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Remote Participant who connected to the Room.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TVIRoomDelegate(im)room:participantDidDisconnect:"></a>
+                    <a name="//apple_ref/objc/Method/-room:participantDidDisconnect:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TVIRoomDelegate(im)room:participantDidDisconnect:">-room:<wbr>participantDidDisconnect:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@brief This method is invoked when a Remote Participant disconnects from the Room.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">room</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRoom.html">TVIRoom</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">room</span>
+    <span class="nf">participantDidDisconnect</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRemoteParticipant.html">TVIRemoteParticipant</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">participant</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">room</span><span class="p">(</span><span class="n">_</span> <span class="nv">room</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRoom.html">TVIRoom</a></span><span class="p">,</span> <span class="n">participantDidDisconnect</span> <span class="nv">participant</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRemoteParticipant.html">TVIRemoteParticipant</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>room</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Room from which a Remote Participant got disconnected.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>participant</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Remote Participant who disconnected from the Room.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TVIRoomDelegate(im)room:participantIsReconnecting:"></a>
+                    <a name="//apple_ref/objc/Method/-room:participantIsReconnecting:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TVIRoomDelegate(im)room:participantIsReconnecting:">-room:<wbr>participantIsReconnecting:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@brief This method is invoked when a Remote Participant is reconnecting to the Room after a signaling connection disruption.</p>
+
+<p>@discussion It can take up to 15 seconds for our signaling backend to detect that a RemoteParticipant&rsquo;s connection has been
+  disrupted due to a network degradation or handoff.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">room</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRoom.html">TVIRoom</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">room</span>
+    <span class="nf">participantIsReconnecting</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRemoteParticipant.html">TVIRemoteParticipant</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">participant</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">room</span><span class="p">(</span><span class="n">_</span> <span class="nv">room</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRoom.html">TVIRoom</a></span><span class="p">,</span> <span class="n">participantIsReconnecting</span> <span class="nv">participant</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRemoteParticipant.html">TVIRemoteParticipant</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>room</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Room to which a Remote Participant is reconnecting.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>participant</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Remote Participant who is reconnecting to the Room.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TVIRoomDelegate(im)room:participantDidReconnect:"></a>
+                    <a name="//apple_ref/objc/Method/-room:participantDidReconnect:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TVIRoomDelegate(im)room:participantDidReconnect:">-room:<wbr>participantDidReconnect:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@brief This method is invoked when a Remote Participant has reconnected to the Room after a signaling connection disruption.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">room</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRoom.html">TVIRoom</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">room</span>
+    <span class="nf">participantDidReconnect</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRemoteParticipant.html">TVIRemoteParticipant</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">participant</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">room</span><span class="p">(</span><span class="n">_</span> <span class="nv">room</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRoom.html">TVIRoom</a></span><span class="p">,</span> <span class="n">participantDidReconnect</span> <span class="nv">participant</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRemoteParticipant.html">TVIRemoteParticipant</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>room</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Room to which a Remote Participant has reconnected.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>participant</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Remote Participant who has reconnected to the Room.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TVIRoomDelegate(im)roomDidStartRecording:"></a>
+                    <a name="//apple_ref/objc/Method/-roomDidStartRecording:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TVIRoomDelegate(im)roomDidStartRecording:">-roomDidStartRecording:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@brief This method is invoked when recording of media being shared to a Room has started.</p>
+
+<p>@discussion This method is only called when a Room which was not previously recording starts recording. If you&rsquo;ve
+  joined a Room which is already recording this event will not be fired.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">roomDidStartRecording</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRoom.html">TVIRoom</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">room</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">roomDidStartRecording</span><span class="p">(</span><span class="n">_</span> <span class="nv">room</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRoom.html">TVIRoom</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>room</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Room for which recording has been started.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TVIRoomDelegate(im)roomDidStopRecording:"></a>
+                    <a name="//apple_ref/objc/Method/-roomDidStopRecording:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TVIRoomDelegate(im)roomDidStopRecording:">-roomDidStopRecording:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@brief This method is invoked when the recording of media shared to a Room has stopped.</p>
+
+<p>@discussion This method is only called when a Room which was previously recording stops recording. If you&rsquo;ve joined
+  a Room which is not recording this event will not be fired.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">roomDidStopRecording</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRoom.html">TVIRoom</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">room</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">roomDidStopRecording</span><span class="p">(</span><span class="n">_</span> <span class="nv">room</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRoom.html">TVIRoom</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>room</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Room for which recording has been stopped.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TVIRoomDelegate(im)room:dominantSpeakerDidChange:"></a>
+                    <a name="//apple_ref/objc/Method/-room:dominantSpeakerDidChange:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TVIRoomDelegate(im)room:dominantSpeakerDidChange:">-room:<wbr>dominantSpeakerDidChange:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@brief This method is invoked when the dominant speaker in the Room changes.</p>
+
+<p>@discussion This method is invoked  when the dominant speaker in the Room changes. Either there is a new dominant
+  speaker, in which case the Room&rsquo;s dominantSpeaker property equals the RemoteParticipant included in the event;
+  or, there is no longer a dominant speaker, in which case the Room&rsquo;s dominantSpeaker property equals <code>nil</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">room</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRoom.html">TVIRoom</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">room</span>
+    <span class="nf">dominantSpeakerDidChange</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/TVIRemoteParticipant.html">TVIRemoteParticipant</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">participant</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">room</span><span class="p">(</span><span class="n">_</span> <span class="nv">room</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRoom.html">TVIRoom</a></span><span class="p">,</span> <span class="n">dominantSpeakerDidChange</span> <span class="nv">participant</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRemoteParticipant.html">TVIRemoteParticipant</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>room</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Room in which the dominant speaker changed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>participant</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Remote Participant who is now the dominant speaker. If there is currently no dominant
+speaker, <code>nil</code> will be sent.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)TVIRoomDelegate(im)room:didReceiveTranscription:"></a>
+                    <a name="//apple_ref/objc/Method/-room:didReceiveTranscription:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)TVIRoomDelegate(im)room:didReceiveTranscription:">-room:<wbr>didReceiveTranscription:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>@brief This method is invoked when live transcription is available in the Room.</p>
+
+<p>@discussion This method is invoked  when live transcription is available in the Room.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">room</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/TVIRoom.html">TVIRoom</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">room</span>
+    <span class="nf">didReceiveTranscription</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">transcription</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">room</span><span class="p">(</span><span class="n">_</span> <span class="nv">room</span><span class="p">:</span> <span class="kt"><a href="../Classes/TVIRoom.html">TVIRoom</a></span><span class="p">,</span> <span class="n">didReceiveTranscription</span> <span class="nv">transcription</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>room</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Room in which the live transcription is available.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transcription</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A dictionary of deserialized JSON payload containing the transcription and related parameters.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2026 <a class="link" href="https://twilio.com" target="_blank" rel="external noopener">Twilio, Inc.</a>. All rights reserved. (Last updated: 2026-10-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
